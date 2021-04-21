@@ -10,8 +10,8 @@ import (
 func main() {
 	mux := http.NewServeMux()
     mux.HandleFunc("/", func(w http.ResponseWriter, q *http.Request) {
-        message := map[string]string{
-            "message": "hello world",
+        message := map[string]string {
+            "message": "Hello World",
         }
         jsonMessage, err := json.Marshal(message)
         if err != nil {
